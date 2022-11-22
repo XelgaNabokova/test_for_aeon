@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0 18px;
+
+    &__btn-download {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 101px;
+        height: 40px;
+        background: #FFFFFF;
+        border: 1px solid rgba(38, 40, 66, 0.12);
+        border-radius: 10px;
+        font-weight: 500;
+        padding: 11px 16px;
+        cursor: pointer;
+    }
+
+}
