@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import Header from './components/Header/Header';
-import Table from './components/Table/Table';
+import GanttChart from './components/GanttChart/GanttChart';
 import { useAppDispatch } from './hooks/redux';
 import { getData } from './store/slices/chart';
 
@@ -15,7 +15,6 @@ const App = () => {
     try {
       const response = await fetch('http://localhost:8080/api/test');
       const data = await response.json();
-      console.log(data)
       dispatch(getData(data))
     }
     catch (e) {
@@ -26,7 +25,7 @@ const App = () => {
   return (
     <div className="App">
       <Header/>
-      <Table/>
+      <GanttChart/>
     </div>
   );
 }

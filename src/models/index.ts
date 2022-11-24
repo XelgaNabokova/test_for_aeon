@@ -1,4 +1,3 @@
-
 export interface IChart {
     id: number,
     period_start: string,
